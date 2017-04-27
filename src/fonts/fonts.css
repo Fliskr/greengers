@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'RobotoCondensedRegular';
+    src: url('./RobotoCondensedRegular.eot');
+    src: url('./RobotoCondensedRegular.eot') format('embedded-opentype'),
+         url('./RobotoCondensedRegular.woff2') format('woff2'),
+         url('./RobotoCondensedRegular.woff') format('woff'),
+         url('./RobotoCondensedRegular.ttf') format('truetype'),
+         url('./RobotoCondensedRegular.svg#RobotoCondensedRegular') format('svg');
+}
+@font-face {
+    font-family: 'RobotoCondensedLight';
+    src: url('./RobotoCondensedLight.eot');
+    src: url('./RobotoCondensedLight.eot') format('embedded-opentype'),
+         url('./RobotoCondensedLight.woff2') format('woff2'),
+         url('./RobotoCondensedLight.woff') format('woff'),
+         url('./RobotoCondensedLight.ttf') format('truetype'),
+         url('./RobotoCondensedLight.svg#RobotoCondensedLight') format('svg');
+}
+
+@font-face {
+  font-family: 'icons';
+  src:  url('./icons.eot?f7pzz');
+  src:  url('./icons.eot?f7pzz#iefix') format('embedded-opentype'),
+    url('./icons.ttf?f7pzz') format('truetype'),
+    url('./icons.woff?f7pzz') format('woff'),
+    url('./icons.svg?f7pzz#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(./glyphicons-halflings-regular.eot);
+    src: url(./glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),
+     url(./glyphicons-halflings-regular.woff2) format('woff2'),
+      url(./glyphicons-halflings-regular.woff) format('woff'),
+       url(./glyphicons-halflings-regular.ttf) format('truetype'), 
+       url(./glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
+
+.halflings  {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 5px;
+}
+
+.halflings-remove-sign:after{
+  content: "\e083";color:rgb(255,50,50);font-size:1.2rem;
+}
+
+.halflings-edit-sign:after{
+  content:"\e065";font-size:1.2rem;
+}
+
+.halflings-plus-sign:after{
+  content:"\e081";font-size:1.2rem;
+ 
+}

@@ -1,0 +1,828 @@
+body {
+    background-color: white;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    min-width: 768px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+html {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 768px;
+}
+
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*button {
+  background-color: #2f886a;
+  color: white;
+  
+  border-radius: 2px;
+  border: 1px solid #004631;
+  padding: 5px 15px;
+}
+
+button:hover {
+  background-color: #2d514a;
+}
+*/
+
+.supTooltip:hover {
+    position: relative;
+    cursor: pointer;
+}
+
+.supTooltip span {
+    display: none;
+    position: absolute;
+}
+
+.supTooltip:hover span,
+.supTooltip span:hover {
+    top: 5px;
+    left: 10px;
+    display: block;
+    width: 100px;
+    background-color: rgba(30, 140, 30, 0.7);
+    border: 1px solid rgba(30, 140, 30, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+body * {
+    font-family: "RobotoCondensedRegular";
+}
+
+.options {}
+
+.errorText {
+    color: black;
+    background-color: orange;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.pipe {
+    /*background: url('../img/trucks/2.png');*/
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    z-index: 4000 !important;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20%;
+}
+
+.truck {
+    /*background: url('../img/trucks/3.png');*/
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    z-index: 4000 !important;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20%;
+}
+
+.longtruck {
+    /*background: url('../img/trucks/1.png');*/
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    z-index: 4000 !important;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20%;
+}
+
+.opentruck {
+    /*background: url('../img/trucks/5.png');*/
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    z-index: 4000 !important;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20%;
+}
+
+.leaflet-marker-icon.active {
+    border: 1px solid orange;
+    background-color: rgba(255, 130, 0, 0.5);
+}
+
+.customMarker {
+    /*background: url('../img/custom-marker.png');*/
+    background-size: 36px 39px;
+    background-repeat: no-repeat;
+    z-index: 4000 !important;
+}
+
+.markerIcon {
+    /*background: url('../img/marker-icon.png');*/
+    cursor: pointer;
+    width: 100%;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 13px 18px;
+    background-position: 4px 0;
+}
+
+.markerIcon.active {
+    /*background-image: url('../img/custom-marker.png');*/
+    background-size: 20px 18px;
+    background-position: 0px 0;
+}
+
+#root {
+    /*width: 980px;*/
+    margin: 0 auto;
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 100%;
+    min-height: 100vh
+}
+
+.header,
+.footer {
+    display: flex;
+    flex: 0 0 100px;
+    flex-direction: row;
+    background-color: white;
+    padding: 5px 15px;
+    align-items: center;
+}
+
+.header {
+    flex-basis: 80px;
+}
+
+.visabil {
+    /*background-image: url(../img/visabil.png);*/
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100px;
+    height: 40px;
+}
+
+.footer {
+    justify-content: center;
+    color: #bbb;
+    background-color: #eee;
+    margin-top: 5px;
+    flex: 0 0 60px;
+}
+
+input[disabled] {
+    background-color: rgba(155, 155, 155, 0.7)
+}
+
+.addBtn {
+    background: linear-gradient(to bottom, #4b834b, #386938);
+    color: white;
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    padding: 5px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.addBtn[disabled] {
+    color: grey;
+    background: lightgrey;
+    cursor: not-allowed;
+}
+
+.editBtn {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.deleteBtn {
+    background: transparent;
+    border: 0;
+    /*height: 40px;width:40px;*/
+    cursor: pointer;
+    /*  border: 1px solid rgba(200, 200, 200, 0.5);
+  padding: 8px 8px;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  font-size: 25px;
+  color: white;
+  line-height: 12px;
+  cursor: pointer;*/
+}
+
+.logoContainer {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.logo {
+    /*background-image: url('../img/logo.png');*/
+    display: block;
+    width: auto;
+    height: 70px;
+    background-repeat: no-repeat;
+    flex: 0 1 200px;
+    background-size: auto 70px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.loginGroup {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+}
+
+.logout {
+    flex: 0 1 auto;
+    border: 0;
+    background-color: transparent;
+    border-left: 1px solid grey;
+    padding: 10px 15px;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    flex: 0 1 60px;
+    background-color: #356a35;
+}
+
+.nav-container .divider {
+    border-bottom: 0.5px solid lightgrey;
+}
+
+.nav.nav-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: #336a38;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background: linear-gradient(to bottom, #4b834b, #386938);
+}
+
+.nav-item,
+.nav-item a {
+    display: flex;
+    flex: 0 1 100px;
+    height: 50px;
+    border-right: 1px solid #33672f;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.nav-item:first-child {
+    border-left: 1px solid #33672f;
+}
+
+.nav-item.disabled,
+.nav-item.disabled a {
+    background: #fff;
+    color: #59705d;
+    border: 1px solid transparent;
+}
+
+.content {
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+}
+
+.loginContainer {
+    display: flex;
+    flex: 1 0 100%;
+    height: 100%;
+    background-color: #eee;
+}
+
+.loginContainer.show {
+    display: none;
+}
+
+.loginForm {
+    display: flex;
+    flex: 1 0 400px;
+    width: 500px;
+    padding: 10px;
+    margin: 20px auto;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.loginFormInnerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex: 0 1 300px;
+    margin-top: 50px;
+    padding: 10px 100px;
+    width: 500px;
+    flex-direction: column;
+    background-color: #2c6834;
+}
+
+.loginFormRow,
+.loginFormRow:focus {
+    background-color: rgba(200, 200, 200, 0.4);
+    display: flex;
+    padding: 10px 20px;
+    width: 100%;
+    flex: 0 1 auto;
+    margin: 5px 10px;
+    border: 0;
+    color: white;
+    outline: none;
+}
+
+.loginFormRow:-ms-input-placeholder {
+    color: white;
+}
+
+.loginFormRow::-webkit-input-placeholder {
+    color: white;
+}
+
+.loginFormRow:-moz-placeholder {
+    color: white;
+}
+
+.loginFormRow::-moz-placeholder {
+    color: white;
+}
+
+.loginFormInnerContainer button {
+    padding: 10px 10px;
+    margin: 20px 10px;
+    width: 100%;
+    align-self: center;
+    background-color: #8dd300;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 0;
+}
+
+.loginFormInnerContainer a {
+    color: white;
+    text-decoration: underline;
+}
+
+.form {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    padding: 20px 10px 40px;
+    font-size: 1.25rem;
+    background-color: #2c6834;
+}
+
+.form .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 0 1 auto;
+    height: 40px;
+    min-width: 738px;
+    margin: 0 auto;
+}
+
+.form .row .cell {
+    display: flex;
+    flex: 0 1 45%;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form .row .cell label {
+    /*padding: 5px;*/
+    letter-spacing: -0.5px;
+    color: white;
+    display: flex;
+    flex: 0 1 130px;
+    margin-right: 5px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form .row button {
+    display: flex;
+    margin: 20px auto;
+    height: 40px;
+    flex: 0 1 150px;
+    background-color: #8dd300;
+    justify-content: center;
+    border: 0;
+    border-radius: 2px;
+}
+
+.form .row .cell input,
+.form .row .cell select,
+.rowLabel {
+    background-color: rgba(200, 200, 200, 0.4);
+    display: flex;
+    border: 0;
+    flex: 1;
+    color: white;
+    padding: 5px;
+    max-width: 187px;
+}
+
+.form .row .cell .autocomplete+div:after {
+    content: "";
+    color: white;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin: -18px 6px 5px auto;
+    border-top: 6px solid white;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.cell .rowLabel,
+.form .row .cell input[disabled] {
+    background-color: rgba(200, 200, 200, 0.7);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.form .row .cell select+span {
+    display: flex;
+    flex: 0 1 25px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(200, 200, 200, 0.4);
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form .row .cell select+span:hover {
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.form .row .cell select option,
+select:-internal-list-box {
+    min-width: 187px;
+    color: white;
+    background: rgb(44, 104, 52);
+    z-index: 999;
+    border: 1px solid lightgrey;
+}
+
+.form>.divider {
+    margin-top: 15px;
+}
+
+.searchContainer {
+    padding: 5px;
+    display: flex;
+    height: 100%;
+    flex: 1 0 100%;
+    flex-direction: column;
+    background: white;
+}
+
+.searchAside {
+    display: flex;
+    flex: 1 0 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #eee;
+}
+
+.searchAside input,
+.searchAside .asideBtn {
+    margin: 10px 5px;
+    flex-basis: 20px;
+    padding: 5px;
+    display: flex;
+    width: 90%;
+    align-self: flex-end;
+}
+
+.searchAside .asideBtn {
+    width: auto;
+    background: linear-gradient(to bottom, #4b834b, #386938);
+    color: white;
+    border: 0;
+    padding: 0 15px;
+    flex-basis: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchAside .searchBtn {
+    width: 120px;
+    padding: 0px 20px 0px 5px;
+}
+
+.searchAside .searchBtn:before {
+    /*background-image: url('../img/magni.svg');*/
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    margin: 7px 7px 0;
+    content: "";
+    display: flex;
+    align-self: flex-start;
+}
+
+.searchAside table {
+    display: table;
+    width: 100%;
+}
+
+.searchAside table * {
+    border: 1px solid lightgrey;
+}
+
+.searchTitle {
+    font-size: 24px;
+    padding: 10px 40px;
+}
+
+.split {
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+}
+
+.splitContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    height: 100%;
+    flex: 1;
+}
+
+.splitContainer>div {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.splitContainer>div:first-child {
+    flex: 0 1 auto;
+    padding: 0 5px;
+}
+
+.splitContainer .splitContainerDivider {
+    display: flex;
+    flex: 0 1 5px;
+    margin: 0 2px;
+    background-color: lightgrey;
+    cursor: move;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.splitContainer .splitContainerDivider span {
+    display: flex;
+    flex: 0 1 3px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    margin: 2px 2px;
+    width: 2px;
+}
+
+.splitContainer>div:last-child {
+    display: block;
+}
+
+.react-table-cell {
+    align-self: center;
+    text-align: center;
+}
+
+.react-table-cell .actions {
+    display: flex;
+    justify-content: center;
+}
+
+.goto {
+    color: grey;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/** START MODAL **/
+
+
+/*.modalForm *{border:1px solid blue;}*/
+
+.modalForm {
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+}
+
+.modalFormRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 0 100%;
+    margin-top: 10px;
+    padding: 2px 30px;
+}
+
+.modalFormRow>label {
+    display: flex;
+    color: white;
+    font-size: 14px;
+    flex: 0 1 200px;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+.modalFormRow>input {
+    display: flex;
+    background-color: rgba(200, 200, 200, 0.4);
+    border: 0;
+    padding: 5px;
+    flex: 0 1 300px;
+    color: white;
+}
+
+.modalFormRow select {
+    display: flex;
+    background-color: rgba(200, 200, 200, 0.4);
+    border: 0;
+    padding: 5px;
+    flex: 0 1 300px;
+    color: white;
+}
+
+.rolesList {
+    display: flex;
+    flex: 1 0 auto;
+    list-style: none;
+    flex-direction: column;
+    padding: 5px 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+.rolesList li {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: -1px;
+    flex: 0 1 auto;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.rolesList input[type="checkbox"] {
+    display: flex;
+    align-items: center;
+    color: ;
+    flex: 0 1 30px;
+    border: 1px solid red;
+}
+
+.modalFormRow option {
+    background-color: #356a35;
+    color: white;
+}
+
+.modalFormRow input[disabled],
+.modalFormRow select[disabled] {
+    display: flex;
+    background-color: rgba(200, 200, 200, 0.7)
+}
+
+.modalFormActions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.formBtn {
+    display: flex;
+    background: rgb(141, 211, 0);
+    color: black;
+    margin: 20px 0;
+    flex: 0 1 150px;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.formBtn[disabled] {
+    color: grey;
+    cursor: not-allowed;
+}
+
+.leaflet-tooltip>div>p {
+    margin: -5px 0;
+    font-size: 0.9rem;
+}
+
+.positionControl {
+    background: rgba(255, 255, 255, 0.7);
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    width: 140px;
+    height: 40px;
+    padding: 0 5px;
+    align-self: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    z-index: 9999;
+    margin: 0 0 15px 0;
+}
+
+.positionControl div {
+    width: 100%;
+    display: flex;
+    flex: 0 1 20px;
+    justify-content: flex-start;
+    z-index: 9999;
+}
+
+
+/** END MODAL **/
+
+.geoJSONPolygon:hover {
+    stroke-width: 2;
+    fill-opacity: 0.5;
+}
+
+.tree-view_item,
+.tree-view_arrow {
+    display: flex;
+}
+
+.tree-view_item {
+    margin-top: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .splitContainer {
+        flex-direction: column;
+        max-height: 2000px;
+    }
+    .splitContainer>div:first-child {
+        flex: 0 1 auto;
+        width: 100%;
+    }
+    .splitContainer>div:last-child {
+        padding: 25px;
+        flex: 1 0 auto;
+        width: 100%;
+        height: 300px;
+    }
+}

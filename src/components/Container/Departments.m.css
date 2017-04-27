@@ -1,0 +1,111 @@
+.departments{
+	display: flex;
+	flex:1 0 auto;
+	padding:10px;
+
+}
+
+.departmentsTree{
+	display:flex;
+	flex: 0 1 200px;
+	border:1px solid lightgrey;
+	flex-direction: column;
+	padding:10px;
+	/*background-color:#eee;*/
+}
+
+.departments :global(.ReactTable){
+	margin:0 10px;
+}
+
+.attributesTable{
+	width:100%;
+}
+
+.departmentsTh{
+	cursor:pointer;
+	height: 100%;
+	width: 100%;
+}
+
+.departmentsTables{
+	display:flex;
+	flex:1 0 auto;
+	flex-direction: column;
+}
+.departmentsTabs{
+	display: flex;
+	flex-direction: row;
+	flex:1;
+}
+
+.headings{
+	margin:5px 20px;
+}
+
+.customProperties{
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin:5px 10px 5px 10px; 
+	border:1px solid lightgrey;
+	flex:0 1 60px;
+	padding: 5px 10px;
+}
+
+.properties{
+	display: flex;
+	flex-direction: column;
+	flex:1 0 auto;
+}
+.actions{
+	display:flex;
+	flex-direction: row;
+	flex:0 1 300px;
+	align-items: flex-start;
+}
+.description{
+    display:flex;
+	flex:1 1 60%;
+
+}
+
+.treesContainer{
+	border:1px solid lightgrey;
+	display: flex;
+	flex:1;
+	flex-direction: column;
+
+}
+/*tabs styles */
+.tabsNav{
+padding:0 10px;    display: flex;
+    flex-direction: row;
+    margin-bottom: -1px;
+    z-index: 9999;
+}
+.navItem.activeTab{
+	border-bottom:1px solid white;
+	cursor:default;
+	font-weight: bold;
+}
+
+.navItem{
+	border:1px solid lightgrey;
+	    cursor: pointer;
+    color: black;
+    padding: 5px 10px;
+}
+.tabPages{margin: 0 10px;
+	border:1px solid lightgrey;
+	display:flex;
+	flex-direction: column;
+	flex:1;
+}
+.tabPage{
+	display:flex;
+	flex:1 1 400px;
+	padding:5px;
+	flex-direction: column;
+	overflow-y: auto;
+}

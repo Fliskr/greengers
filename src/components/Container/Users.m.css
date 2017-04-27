@@ -1,0 +1,46 @@
+.departmentsTree{
+	display:flex;
+	flex: 0 1 300px;
+	flex-direction: column;
+	padding:10px;
+	color:#eee;
+	padding-right:20px;
+}
+.treeCb{
+	margin:0 5px;
+}
+.treeLabel{
+	display: flex;
+	flex:1;
+	justify-content: space-between;
+}
+
+.rolesList{
+    display: flex;
+    flex: 1 0 auto;
+    list-style: none;
+    flex-direction: column;
+    padding:5px 10px;
+    justify-content: flex-start;
+     align-items: flex-start;
+     overflow-y: auto;
+}
+.rolesList li{
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top:-1px;
+    flex:0 1 auto;
+    color:white;border:1px solid white;
+    padding:2px;
+}
+.rolesList input[type="checkbox"]{
+    display:flex;
+    align-items: center;
+    color:;
+    flex:0 1 30px;
+    border:1px solid red;
+
+}

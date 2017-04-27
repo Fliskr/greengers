@@ -1,0 +1,112 @@
+html * {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+html{
+	font-family: arial,helvetica,neue,sans-serif;
+	padding-top:70px;
+	font-size:14px;
+}
+
+button:focus{
+	outline: 0;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 70px;
+    background-color: #f7f7f7;
+    color: #393939;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 976px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: arial,helvetica,neue,sans-serif;
+}
+
+.headerContent{
+	 min-width: 1100px;
+	 margin:0 auto;
+	 display:flex;
+	 flex-direction: row;
+	 justify-content: space-between;
+	 align-items: center;
+}
+
+
+
+.logoContainer {
+    /*margin: 0 150px 0 auto;*/
+    display: flex;
+    flex: 0 1 225px;
+}
+
+.logo {
+	width:148px;
+    height:40px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/be_hive.png');
+    cursor:pointer;
+}
+
+.pageNav{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex:1;
+}
+
+.pageNav li{
+
+}
+
+.pageNav li a{
+	text-decoration: none;
+	color:black;
+	font-size:24px;
+}
+.pageNav li a:hover{
+	text-decoration: underline;
+}
+
+.phone {
+    /*margin: 0px auto 0 150px;*/
+    display: flex;
+    flex: 0 1 450px;
+    justify-content: flex-end;
+    align-items: center;
+    font-size:18px;
+    color:black;
+}
+.phone button{
+	cursor:pointer;
+	margin:0 0 0 20px;
+	border-radius: 20px;
+	width:180px;
+	height: 38px;
+	background-color:#ffd024;
+	font-size:18px;
+	font-family: arial,helvetica,neue,sans-serif;
+	border:0;
+}
+.phone button:active {
+    transform: scale(.97);
+}
+
+.content{
+	display: flex;
+	flex-direction: column;
+	min-width: 976px;
+	margin:0 auto;
+	border:1px solid limegreen;
+	flex:1 0 100%;
+}

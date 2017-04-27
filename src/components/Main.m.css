@@ -1,0 +1,72 @@
+.main{
+	display: flex;
+	flex-direction: column;
+}
+
+.sec1  .funnelBlock{
+	display:flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.sec1  .funnel{
+	display: flex;
+	flex-direction: row;
+	padding:70px 5px 20px;
+	width:100%;
+	justify-content: center;
+}
+.sec1  .funnel>div{
+
+	display: flex;
+	flex:0 1 45%;
+	/*border:1px solid purple;*/
+}
+.sec1  .funnel>div:first-child{
+	flex-basis:55%;
+}
+
+.sec1  .funnel>div:last-child{
+	padding:30px 30px 30px 15px;
+}
+.sec1  .hiveBgLogo{
+	display: flex;
+	background-image: url('../img/hive.png');
+	background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-height:500px;
+}
+.sec1 .funnelContent{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;align-items: flex-end;
+}
+.sec1 .funnelContent h1{
+	font-size:42px;
+	font-weight: 400;
+	font-family: open sans;
+}
+
+.sec1 .funnelContent h2{
+	font-size:28px;
+	font-weight: normal;
+	font-family: open sans;
+}
+.sec1 .funnelContent p{
+	font-size:18px;
+	font-weight: 400;
+	font-family: open sans;
+}
+.sec1 .slider{
+	display: flex;
+	flex:0 1 auto;
+	justify-content: center;
+	align-items: center;width:976px;
+	margin:0 auto;padding:30px 50px 60px ;
+}
+.sec1 .clickableHeader{
+	font-size:28px;
+	text-decoration: underline;text-align: center;
+	cursor:pointer;
+}
