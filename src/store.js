@@ -1,6 +1,6 @@
 import { createStore,applyMiddleware } from 'redux';
 import { syncHistoryWithStore } from 'react-router-redux';
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 import thunk from 'redux-thunk';
 import createLogger from 'redux-logger';
 
@@ -16,7 +16,7 @@ const store = createStore(
 	)
 	);
 
-export const history = syncHistoryWithStore(browserHistory, store);
+export const history = syncHistoryWithStore(hashHistory, store);
 
 if (module.hot) {
   module.hot.accept('./reducers/', () => {

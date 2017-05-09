@@ -14,12 +14,34 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state={
-      errors:[]
+      scrolled:false,
     }
   }
 
   componentDidMount() {
     this.props.token && this.props.getCurrentUser();
+    this.onScroll=window.addEventListener('scroll',this.onWindowScroll.bind(this),false);
+  }
+
+  onWindowScroll(e){
+    let changeColor=document.body.scrollTop>20;
+    if(this.state.scrolled!==changeColor){
+      this.setState({scrolled:changeColor});
+    }
+    // let header =  document.getElementById('mainHeader').style;
+    // "scrolledHeader";
+    // header.backgroundColor=changeColor?"white":"transparent";
+    // header.color=changeColor?"#000":"#fff";
+    // let logo=document.getElementById('mainLogo').style;
+    // "scrolledLogo";
+
+  }
+    // header.backgroundColor=changeColor?"white":"transparent";
+    // header.color=changeColor?"#000":"#fff";
+    // let logo=document.getElementById('mainLogo').style;
+    // "scrolledLogo";
+  componentWillUnmount(){
+    window.removeEventListener('scroll',this.onWindowScroll);
   }
 
  async componentWillUpdate(nextProps, nextState) {
@@ -142,17 +164,19 @@ class App extends Component {
     }
     return (
       <div className='app-container'>
-        <header className="header">
+        <header className={`header ${this.state.scrolled?" scrolledHeader":""}`}>
         <div className="headerContent">
           <div className="logoContainer"><div className="logo" onClick={this.handleGoHome.bind(this)}/></div>
           <ul className="pageNav">
             <li><a href="#">Главная</a></li>
+            <li><a href="#">Метод</a></li>
             <li><a href="#">Услуги</a></li>
             <li><a href="#">Команда</a></li>
-            <li><a href="#">Проекты</a></li>
+            <li><a href="#">Частые вопросы</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
           <div className="phone" >
-            8 800 300 20 20
+
             <button>Заказать звонок</button>
           </div>  
           </div>

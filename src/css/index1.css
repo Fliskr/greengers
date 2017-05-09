@@ -7,6 +7,8 @@ body {
 }
 
 * {
+    transition: all 1s ease-in 1s;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 
@@ -71,54 +73,6 @@ button:hover {
     font-size: 0.8rem;
 }
 
-body * {
-    font-family: "RobotoCondensedRegular";
-}
-
-.options {}
-
-.errorText {
-    color: black;
-    background-color: orange;
-    width: 100%;
-    padding: 10px 10px;
-}
-
-.pipe {
-    /*background: url('../img/trucks/2.png');*/
-    background-size: 30px 30px;
-    background-repeat: no-repeat;
-    z-index: 4000 !important;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20%;
-}
-
-.truck {
-    /*background: url('../img/trucks/3.png');*/
-    background-size: 30px 30px;
-    background-repeat: no-repeat;
-    z-index: 4000 !important;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20%;
-}
-
-.longtruck {
-    /*background: url('../img/trucks/1.png');*/
-    background-size: 30px 30px;
-    background-repeat: no-repeat;
-    z-index: 4000 !important;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20%;
-}
-
-.opentruck {
-    /*background: url('../img/trucks/5.png');*/
-    background-size: 30px 30px;
-    background-repeat: no-repeat;
-    z-index: 4000 !important;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20%;
-}
 
 .leaflet-marker-icon.active {
     border: 1px solid orange;

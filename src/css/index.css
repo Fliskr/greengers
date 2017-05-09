@@ -1,11 +1,18 @@
 html * {
     box-sizing: border-box;
     padding:0;
+    font-family: 'Open Sans', sans-serif;
     margin:0;
+    font-size:12px;
 }
+a,a:visited,button{
+	color:inherit;
+}
+
 html{
+	/*background-color: rgba(0,0,0,0.1);*/
 	font-family: arial,helvetica,neue,sans-serif;
-	padding-top:70px;
+	padding-top:0;
 	font-size:14px;
 }
 
@@ -18,29 +25,40 @@ button:focus{
     display: flex;
     flex-direction: row;
     flex: 1;
-    height: 70px;
-    background-color: #f7f7f7;
-    color: #393939;
+    height: 100px;
+    background-color: transparent;
+    color: #fff;
     top: 0;
     left: 0;
     width: 100%;
-    min-width: 976px;
+    min-width: 1100px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 25px;
     font-family: arial,helvetica,neue,sans-serif;
+    transition:color 0.3s ease-in-out 0s,background-color 0.3s ease-in-out 0s;
 }
 
 .headerContent{
 	 min-width: 1100px;
-	 margin:0 auto;
+	 margin:0 20px;
 	 display:flex;
+	 flex:1;
 	 flex-direction: row;
 	 justify-content: space-between;
 	 align-items: center;
 }
 
+.scrolledHeader{
+	color:#222;
+	background-color:#fff;
+	transition: all 0.3s ease-out 0.1s; 
+}
 
+.scrolledHeader .logo{
+	background-image:url("../img/be_hive_dark.png");
+	transition: background-image 0.3s ease-out 0.1s;
+}
 
 .logoContainer {
     /*margin: 0 150px 0 auto;*/
@@ -61,45 +79,50 @@ button:focus{
 	list-style: none;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 	flex:1;
 }
 
 .pageNav li{
-
+ padding:10px;
 }
 
 .pageNav li a{
 	text-decoration: none;
-	color:black;
-	font-size:24px;
+	color:inherit;
+	font-size:1.25rem;
 }
 .pageNav li a:hover{
-	text-decoration: underline;
+	transition: color 0.3s ease-in-out 0.1s;
+	color:purple;
+	cursor:pointer;
 }
 
 .phone {
-    /*margin: 0px auto 0 150px;*/
     display: flex;
-    flex: 0 1 450px;
+    flex: 0 1 250px;
     justify-content: flex-end;
     align-items: center;
     font-size:18px;
-    color:black;
+
 }
 .phone button{
 	cursor:pointer;
 	margin:0 0 0 20px;
-	border-radius: 20px;
+	border-radius: 40px;
 	width:180px;
-	height: 38px;
-	background-color:#ffd024;
+	height: 48px;
+	background-color:transparent;border: 2px solid purple;
 	font-size:18px;
-	font-family: arial,helvetica,neue,sans-serif;
-	border:0;
+	padding:10px;
+
+
 }
-.phone button:active {
-    transform: scale(.97);
+.phone button:hover {
+    transition: background-color 0.3s ease-out 0.2s,color 0.3s ease-out 0.2s;
+	background-color: purple;
+	color:white;
 }
 
 .content{

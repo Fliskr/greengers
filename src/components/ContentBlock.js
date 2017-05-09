@@ -6,7 +6,9 @@ class ContentBlock extends PureComponent{
 
 
 render(){
-	return (<div className={styles.block}>
+	let blockClass=this.props.blockName?(styles.block+" "+this.props.blockName):(styles.block);
+
+	return (<div className={blockClass}>
 				<div className={styles.inner +" " +this.props.className}>
 					{this.props.children}
 				</div>
