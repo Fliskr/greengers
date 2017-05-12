@@ -2,8 +2,11 @@ import React,{PureComponent} from 'react';
 import styles from './Main.m.css';
 import ContentBlock from './ContentBlock';
 import Slider from './Slider';
+import FirstSlider from './FirstSlider';
+import Icon from './Icon';
 
 class Main extends PureComponent{
+
 	render(){
 		return (<div className={styles.main}>
 		<ContentBlock blockName={styles.sec0img} className={styles.sec0}>
@@ -13,7 +16,7 @@ class Main extends PureComponent{
 			<p>Нажмите на кнопку ниже, чтобы получить бесплатную консультацию от наших специалистов</p>
 			<button>Получить консультацию</button>
 		</ContentBlock>
-		<ContentBlock className={styles.sec1}>
+		<ContentBlock className={styles.sec1} blockName={styles.sec1block}>
 			<div className={styles.funnelBlock} >
 				<div className={styles.funnel}>
 					<div className={styles.hiveBgLogo}></div>
@@ -35,17 +38,60 @@ class Main extends PureComponent{
 					textComponent={
 						(<h2 className={styles.clickableHeader}>Нажмите, чтобы прочитать подробнее про "Бизнес воронку" и как мы делаем Продающий маркетинг:</h2>)
 					}>
-						<div> hello!!!!</div>
+						<FirstSlider />
 				</Slider>
 			</div>
 		</ContentBlock>
 	
+		<ContentBlock className={styles.sec2} blockName={styles.sec2block}>
+			<div className={styles.sec2Top} >
+				<div className={styles.aside}>
+					<h1>Выберите желаемую услугу</h1>
+					<hr/>
+					<p>Вы можете заказать каждую услугу отдельно или сразу весь комплекс.</p>
+					<button></button>
+				</div>
+				<div className={styles.actionsContainer}>
+					<div className={styles.actions}>
+						<div className={styles.action}>
+							<h2>Создание посадочной страницы</h2>
+							<button></button>
+						</div>
+						<div className={styles.action+" "+styles.mainAction}>
+							<h2>Настройка Яндекс Директ</h2>
+							<button></button>
+						</div>
+						<div className={styles.action}>
+							<h2>Настройка Google Adwords</h2>
+							<button></button>
+						</div>
+					</div>
+					<div className={styles.actionsBottom}>
+						<h2>Умный, автоматизированный e-mail маркетинг</h2>
+						<p>Создаём автоматическую систему утепления и закрытия клиентов из интернета.<br/>С помощью автосерии писем, подписных и рекламы.</p>
+						<button></button>
+					</div>
+				</div>
+			</div>
+			<div className={styles.sec2Bottom}>
+			<h3>Другие услуги, которые мы реализовываем:</h3>
+			<div className={styles.iconContainer}>
+				<Icon icon="/static/img/icons/1.png" text="Аудит бизнеса и анализ рынка"/>
+				<Icon icon="/static/img/icons/2.png" text="Web-дизайн"/>
+				<Icon icon="/static/img/icons/3.png" text="Разработка стратегии продвижения"/>
+				<Icon icon="/static/img/icons/4.png" text="Верстка и программирование"/>
+				<Icon icon="/static/img/icons/5.png" text="Создание прототипа и тех. задания"/>
+				<Icon icon="/static/img/icons/6.png" text="Поддержка и Обслуживание"/>
+				<Icon icon="/static/img/icons/7.png" text="А/Б тестирование"/>
+				<Icon icon="/static/img/icons/8.png" text="Подключение коллтрекинга"/>
+			</div>
+			</div>
+		</ContentBlock>
+{/*		<ContentBlock></ContentBlock>
 		<ContentBlock></ContentBlock>
 		<ContentBlock></ContentBlock>
 		<ContentBlock></ContentBlock>
-		<ContentBlock></ContentBlock>
-		<ContentBlock></ContentBlock>
-		<ContentBlock></ContentBlock>
+		<ContentBlock></ContentBlock>*/}
 		</div>)
 	}
 }

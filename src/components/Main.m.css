@@ -3,6 +3,8 @@
 	flex-direction: column;
 }
 
+
+/** SEC0 **/
 .sec0img{
 	background-image: url('../img/chair.jpg');
 	background-size: 100% 130%;
@@ -44,11 +46,6 @@
 	margin-bottom:40px;
 }
 
-hr{
-	width:50px;
-	border:1px solid rebeccapurple;
-	margin:10px 0 30px;
-}
 
 .sec0 button{
 	border:2px solid rebeccapurple;
@@ -64,6 +61,11 @@ hr{
 	background-color: rebeccapurple;
 }
 
+/** SEC1 **/
+
+.sec1block{
+	padding:40px 0 ;
+}
 .sec1  .funnelBlock{
 	display:flex;
 	flex-direction: column;
@@ -127,7 +129,8 @@ hr{
 	display: flex;
 	flex:0 1 auto;
 	justify-content: center;
-	align-items: center;width:976px;
+	align-items: center;
+	width:976px;
 	margin:0 auto;padding:30px 50px 60px ;
 }
 .sec1 .clickableHeader{
@@ -139,4 +142,137 @@ hr{
 .sec1 b {
 	font-size:inherit;
 	color:inherit;
+}
+
+
+/** SEC2 **/
+
+.sec2block{
+	background: #fbfbfb;
+	padding:40px 0;
+}
+.sec2block .sec2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.sec2block button{
+	background-color: transparent;
+	border:2px solid rebeccapurple;
+	border-radius: 40px;
+	padding:10px 30px;
+	font-size:1.2rem;
+	font-weight: bolder;
+	margin:20px 10px;
+	cursor:pointer;
+}
+
+.sec2block .iconContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width:976px;
+	height:300px;
+}
+
+.sec2block h3{
+	width:976px;
+	margin:15px auto;
+	text-align: center;
+	font-size:1.2rem;
+}
+
+
+.sec2block .sec2Bottom{
+		display: flex;
+		flex-direction: column;
+		width:976px;
+		flex:1;
+}
+
+.sec2block .sec2Top{
+	display: flex;
+	flex-direction: row;
+	width:976px;
+	justify-content: space-around;
+	flex:1;
+	padding:20px 80px;
+}
+.sec2 .aside{
+	flex:0 1 200px;
+}
+
+.sec2 .aside h1{
+	font-size:2rem;
+	width:150px;
+}
+
+.sec2 .aside p{
+	font-size:0.9rem;
+	width:150px;
+	font-weight: 600;
+}
+.sec2 .actionsContainer{
+	display: flex;
+	flex:0 1 600px;
+	flex-direction: column;
+}
+.sec2 .actions{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: #fff;
+}
+.sec2 .action{
+	flex:0 1 198px;
+	padding:50px;
+	border:2px solid #f0f0f0;
+	border-bottom:0;
+	box-shadow: 0px 3px 5px -1px #555;
+	display: flex;
+	flex-direction: column;
+}
+
+.sec2 .action.mainAction{
+	background-color: #f0f0f0;
+}
+.sec2 .action.mainAction button{
+	background-color: rebeccapurple;
+}
+
+.sec2 .action h2{
+	display: flex;
+	align-items: center;justify-content: center;
+	flex:0 1 50px;
+	text-align: center;
+
+}
+
+.sec2 .actionsBottom{
+	margin: 2px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex:0 1 200px;
+	border:2px solid lightgrey;
+border-bottom:0;
+border-top:0;
+box-shadow: 0px 3px 5px -1px #555;
+background: #fff;
+}
+
+.sec2 .actionsBottom h2{
+	font-size:1.2rem;
+	margin:10px;
+}
+
+.sec2 .actionsBottom p{
+	width:330px;
+	text-align: center;
+	margin:10px;
 }

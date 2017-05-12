@@ -1,0 +1,19 @@
+.icon{
+	display: flex;
+	flex-direction: column;
+	flex:0 1 200px;
+	justify-content: center;
+	align-items: center;
+}
+.icon img{
+	width:50px;
+	height: 50px;
+}
+
+.icon p{
+	width:150px;
+	margin-top:20px;
+	text-align: center;
+	font-size:1.05rem;
+	font-weight: 500;
+}

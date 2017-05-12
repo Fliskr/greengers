@@ -20,6 +20,13 @@ button:focus{
 	outline: 0;
 }
 
+
+hr{
+	width:50px;
+	border:1px solid rebeccapurple;
+	margin:10px 0 30px;
+}
+
 .header {
     position: fixed;
     display: flex;
@@ -130,6 +137,5 @@ button:focus{
 	flex-direction: column;
 	min-width: 976px;
 	margin:0 auto;
-	border:1px solid limegreen;
 	flex:1 0 100%;
 }

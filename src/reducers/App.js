@@ -1,4 +1,16 @@
 const initialState = {
+}
+
+export function App(state = initialState, action) {
+  switch (action.type) {
+    default:
+      return state;
+  }
+}
+
+
+/*
+const initialState = {
   locale:localStorage.locale || "sp",
   token: localStorage.token || "",
   login: localStorage.login || "",
@@ -102,3 +114,4 @@ export function App(state = initialState, action) {
 
   }
 }
+*/

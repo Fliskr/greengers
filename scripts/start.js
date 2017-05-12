@@ -32,7 +32,7 @@ if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
 }
 
 // Tools like Cloud9 rely on this.
-var DEFAULT_PORT = process.env.PORT || 3000;
+var DEFAULT_PORT = process.env.PORT || 3001;
 var compiler;
 var handleCompile;
 
@@ -223,12 +223,6 @@ function runDevServer(host, port, protocol) {
     // Silence WebpackDevServer's own logs since they're generally not useful.
     // It will still show compile warnings and errors with this setting.
     clientLogLevel: 'none',
-    proxy: {
-      '/api/**': {
-        target: 'http://visabilsrv01.domain.corp:8080',
-        secure: true
-      }
-  },
   headers: { "Access-Control-Allow-Origin": "*" },
     // By default WebpackDevServer serves physical files from current directory
     // in addition to all the virtual build products that it serves from memory.
