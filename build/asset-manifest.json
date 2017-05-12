@@ -1,13 +1,5 @@
 {
   "main.css": "static/css/main.css",
   "main.js": "static/js/main.js",
-  "static/fonts/RobotoCondensedLight.eot": "static/fonts/RobotoCondensedLight.eot",
-  "static/fonts/RobotoCondensedLight.svg": "static/fonts/RobotoCondensedLight.svg",
-  "static/fonts/RobotoCondensedLight.ttf": "static/fonts/RobotoCondensedLight.ttf",
-  "static/fonts/RobotoCondensedLight.woff": "static/fonts/RobotoCondensedLight.woff",
-  "static/fonts/RobotoCondensedRegular.eot": "static/fonts/RobotoCondensedRegular.eot",
-  "static/fonts/RobotoCondensedRegular.svg": "static/fonts/RobotoCondensedRegular.svg",
-  "static/fonts/RobotoCondensedRegular.ttf": "static/fonts/RobotoCondensedRegular.ttf",
-  "static/fonts/RobotoCondensedRegular.woff": "static/fonts/RobotoCondensedRegular.woff",
-  "static/fonts/glyphicons-halflings-regular.svg": "static/fonts/glyphicons-halflings-regular.svg"
+  "static\\fonts\\fontawesome-webfont.eot": "static/fonts/fontawesome-webfont.eot"
 }
