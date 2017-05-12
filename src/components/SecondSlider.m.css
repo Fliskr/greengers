@@ -1,0 +1,17 @@
+.content{
+	display: flex;
+	width:976px;
+	flex-direction: column;
+	margin:0 auto;
+	padding:40px ;
+}
+
+.content p{
+	margin:10px;
+}
+
+.content button{
+	width:150px;
+	align-self: center;
+	margin-top:30px;
+}

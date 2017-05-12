@@ -3,6 +3,7 @@ import styles from './Main.m.css';
 import ContentBlock from './ContentBlock';
 import Slider from './Slider';
 import FirstSlider from './FirstSlider';
+import SecondSlider from './SecondSlider';
 import Icon from './Icon';
 
 class Main extends PureComponent{
@@ -38,11 +39,13 @@ class Main extends PureComponent{
 					textComponent={
 						(<h2 className={styles.clickableHeader}>Нажмите, чтобы прочитать подробнее про "Бизнес воронку" и как мы делаем Продающий маркетинг:</h2>)
 					}>
-						<FirstSlider />
+					<SecondSlider />
 				</Slider>
 			</div>
 		</ContentBlock>
-	
+		<ContentBlock>
+			<FirstSlider />
+		</ContentBlock>
 		<ContentBlock className={styles.sec2} blockName={styles.sec2block}>
 			<div className={styles.sec2Top} >
 				<div className={styles.aside}>
