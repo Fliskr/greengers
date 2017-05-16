@@ -1,9 +1,9 @@
 .content{
 	display: flex;
-	width:976px;
+	width:720px;
 	flex-direction: column;
 	margin:0 auto;
-	padding:40px ;
+	padding:40px 0 ;
 }
 
 .content p{

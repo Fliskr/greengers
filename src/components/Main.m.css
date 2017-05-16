@@ -25,13 +25,13 @@
 
 }
 .sec0 h1{
-	font-size:2.5rem;
+	font-size:44px;
 	width:400px;
 }
 
 .sec0 p{	
 	width:900px;
-	font-size:1.3rem;
+	font-size:18px;
 	margin:10px 0 10px;
 	text-align: center;display: flex;
 	justify-content: center;
@@ -40,9 +40,8 @@
 }
 .sec0 p b{
 	word-wrap: break-word;
-	padding:0 130px;
+	padding:0 120px;
 	text-align: center;
-	font-size:inherit;
 	margin-bottom:40px;
 }
 
@@ -53,7 +52,7 @@
 	color:inherit;
 	padding:15px  20px;
 	background-color: transparent;
-	font-size:2rem;
+	font-size:18px;
 	cursor:pointer;
 }
 
@@ -104,19 +103,23 @@
 	text-align: end;
 }
 .sec1 .funnelContent h1{
-	font-size:3rem;
+	font-size:44px;
 	letter-spacing: 3px;
 	font-weight: 400;
 	font-family: open sans;
 }
 
 .sec1 .funnelContent h2{
-	font-size:1.5rem;
+	font-size:32px;
 	font-weight: normal;
 	font-family: open sans;
 }
-.sec1 .funnelContent p{
+
+.sec1 .funnelContent .bigP{
 	font-size:18px;
+}
+.sec1 .funnelContent p{
+	font-size:14px;
 	font-weight: 400;
 	font-family: open sans;
 	width:410px;
@@ -134,13 +137,16 @@
 	margin:0 auto;padding:30px 50px 60px ;
 }
 .sec1 .clickableHeader{
-	font-size:28px;
+	font-size:18px;
 	text-decoration: underline;text-align: center;
 	cursor:pointer;
+	width:600px;
+	margin:0 100px;
+	display: flex;
+	align-self: center;
 }
 
 .sec1 b {
-	font-size:inherit;
 	color:inherit;
 }
 
@@ -163,7 +169,7 @@
 	border:2px solid rebeccapurple;
 	border-radius: 40px;
 	padding:10px 30px;
-	font-size:1.2rem;
+	font-size:18px;
 	font-weight: bolder;
 	margin:20px 10px;
 	cursor:pointer;
@@ -183,7 +189,7 @@
 	width:976px;
 	margin:15px auto;
 	text-align: center;
-	font-size:1.2rem;
+	font-size:18px;
 }
 
 
@@ -207,14 +213,14 @@
 }
 
 .sec2 .aside h1{
-	font-size:2rem;
+	font-size:24px;
 	width:150px;
 }
 
 .sec2 .aside p{
-	font-size:0.9rem;
+	font-size:14px;
 	width:150px;
-	font-weight: 600;
+	font-weight: 700;
 }
 .sec2 .actionsContainer{
 	display: flex;
@@ -267,7 +273,7 @@ background: #fff;
 }
 
 .sec2 .actionsBottom h2{
-	font-size:1.2rem;
+	font-size:18px;
 	margin:10px;
 }
 
@@ -275,4 +281,51 @@ background: #fff;
 	width:330px;
 	text-align: center;
 	margin:10px;
+}
+
+.sec6block {
+	display: flex;
+	background-image: url('../img/tablet-table.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height:700px;
+}
+
+.sec6block >div{
+	background-color: rgba(0,0,0,0.2);
+	margin:0 0;
+	width:100%;
+	
+}
+
+.sec7block{
+	height: 860px
+}
+
+.sec8block{
+
+	border-top:1px solid lightgrey;
+}
+
+.sec9block{
+	background-color: #eee;
+	min-height:400px !important;
+	height: 400px;
+}
+
+.sec11block {
+	display: flex;
+	background-image: url('../img/tablet-man.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height:700px;
+}
+
+.sec11block >div{
+	background-color: rgba(0,0,0,0.2);
+	margin:0 0;
+	width:100%;
+	
 }

@@ -1,4 +1,6 @@
 {
+  "\\static\\media\\tablet-man.jpg": "/static/media/tablet-man.jpg",
+  "\\static\\media\\tablet-table.jpg": "/static/media/tablet-table.jpg",
   "main.css": "static/css/main.css",
   "main.js": "static/js/main.js",
   "static\\fonts\\fontawesome-webfont.eot": "static/fonts/fontawesome-webfont.eot"

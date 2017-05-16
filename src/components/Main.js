@@ -5,6 +5,13 @@ import Slider from './Slider';
 import FirstSlider from './FirstSlider';
 import SecondSlider from './SecondSlider';
 import Icon from './Icon';
+import Block6 from './Block6';
+import Block7 from './Block7';
+import Block8 from './Block8';
+import Block9 from './Block9';
+import Block10 from './Block10';
+import Block11 from './Block11';
+import FooterBlock  from './FooterBlock';
 
 class Main extends PureComponent{
 
@@ -24,7 +31,7 @@ class Main extends PureComponent{
 					<div className={styles.funnelContent}>
 						<h1>Бизнес - это воронка</h1>
 						<hr/>
-						<h2 className={styles.firstH2}><b>Самая большая проблема</b></h2>
+						<p className={styles.bigP}><b>Самая большая проблема</b></p>
 						<br/>
 						<p>в том, что большинство предпринимателей 
 						не понимает из чего складывается процесс привлечения
@@ -90,9 +97,14 @@ class Main extends PureComponent{
 			</div>
 			</div>
 		</ContentBlock>
-{/*		<ContentBlock></ContentBlock>
-		<ContentBlock></ContentBlock>
-		<ContentBlock></ContentBlock>
+		<ContentBlock blockName={styles.sec6block}><Block6 /></ContentBlock>
+		<ContentBlock blockName={styles.sec7block}><Block7 /></ContentBlock>
+		<ContentBlock blockName={styles.sec8block}><Block8 /></ContentBlock>
+		<ContentBlock blockName={styles.sec9block}><Block9 /></ContentBlock>
+		<ContentBlock blockName={styles.sec10block}><Block10 /></ContentBlock>
+		<ContentBlock blockName={styles.sec11block}><Block11 /></ContentBlock>
+		<FooterBlock />
+{/*
 		<ContentBlock></ContentBlock>
 		<ContentBlock></ContentBlock>*/}
 		</div>)

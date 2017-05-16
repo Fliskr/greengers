@@ -1,0 +1,50 @@
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	color:#222;
+	padding:60px 0;
+}
+
+.container h2{
+	font-size:24px;
+}
+
+.container>*{
+	margin:10px;
+}
+
+.container>p{
+	font-size:18px;
+}
+
+.imgBlock{
+	display: flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	flex:0 1 300px;
+	width:800px;
+	padding:10px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.imgBlock input, .imgBlock button{
+	padding:5px 15px;
+	margin:10px;
+	width:300px;
+	border-radius: 20px;
+	font-size:14px;
+}
+
+.imgBlock input{
+	background-color: inherit;
+	border:1px solid lightgrey;
+	font-weight: bold;
+}
+
+.imgBlock button:hover{
+	color:white;
+}

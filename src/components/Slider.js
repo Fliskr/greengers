@@ -1,5 +1,5 @@
 import React,{PureComponent} from 'react';
-
+// import styles from './Slider.m.css';
 class Slider extends PureComponent{
 	constructor(props) {
 		super(props);
@@ -15,8 +15,10 @@ class Slider extends PureComponent{
 
 	render(){
 		return(
-			<div>
-			<div onClick={this.toggleExpanded}>{this.props.textComponent}</div>
+			<div className={(this.props.className || "")}>
+			<div onClick={this.toggleExpanded} style={{textDecoration: "underline",cursor: "pointer"}}>
+				{this.props.textComponent}
+			</div>
 			{this.state.expanded && this.props.children}
 			</div>
 			)

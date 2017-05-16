@@ -7,12 +7,14 @@ class App extends Component {
     super(props);
     this.state={
       scrolled:false,
+      loading:0
     }
   }
 
   componentDidMount() {
     this.props.token && this.props.getCurrentUser();
     this.onScroll=window.addEventListener('scroll',this.onWindowScroll.bind(this),false);
+
   }
 
   onWindowScroll(e){
@@ -40,6 +42,7 @@ class App extends Component {
 
     return (
       <div className='app-container'>
+        <div className="loadingLine"></div>
         <header className={`header ${this.state.scrolled?" scrolledHeader":""}`}>
         <div className="headerContent">
           <div className="logoContainer"><div className="logo" /></div>

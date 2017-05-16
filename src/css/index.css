@@ -3,10 +3,19 @@ html * {
     padding:0;
     font-family: 'Open Sans', sans-serif;
     margin:0;
-    font-size:12px;
+    font-size:14px;
 }
+
 a,a:visited,button{
 	color:inherit;
+}
+
+b{
+	font-size: inherit;
+}
+
+input,button{
+	outline: none;
 }
 
 html{
@@ -27,6 +36,7 @@ button{
 	padding:10px  20px;
 	background-color: transparent;
 	cursor:pointer;
+	transition: all 0.3s ease-out 0.1s; 
 }
 
 button:hover{
@@ -39,7 +49,26 @@ hr{
 	margin:10px 0 30px;
 }
 
+.loadingLine{
+	position:fixed;
+	border:2px solid rebeccapurple;
+	width:100vw;
+	top:0;
+	display: block;
+	height: 2px;
+	z-index: 999999;
+	transform: translateX(100%);
+	animation: loadline 3s ease-out;
+}
+
+@keyframes loadline{
+	0%{transform:translateX(-100%);width:70vw;}
+	50%{width:30vw;}
+	75%{width:50vw;}
+	100%{transform:translateX(100%);width:100vw;}
+}
 .header {
+	z-index: 99999;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -111,7 +140,7 @@ hr{
 .pageNav li a{
 	text-decoration: none;
 	color:inherit;
-	font-size:1.25rem;
+	font-size:14px;
 }
 .pageNav li a:hover{
 	transition: color 0.3s ease-in-out 0.1s;
